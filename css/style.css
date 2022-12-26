@@ -41,6 +41,15 @@ body {
     justify-content: space-evenly;
   }
 
+  .sky {
+    background: radial-gradient(
+      circle closest-corner at 15% 15%,
+      #ffcf33 0% 20%,
+      #ffff66 21%,
+      #bbeeff 100%
+    );
+  }
+
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
 .bb1 {
     width: 10%;
