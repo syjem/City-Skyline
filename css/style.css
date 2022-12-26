@@ -224,6 +224,8 @@ body {
     height: 45%;
     position: relative;
     left: 10%;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .fb4b {
