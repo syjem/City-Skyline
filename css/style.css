@@ -224,14 +224,14 @@ body {
     height: 45%;
     position: relative;
     left: 10%;
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .fb4b {
     width: 100%;
     height: 89%;
     background-color: var(--building-color1);
+    display: flex;
+    flex-wrap: wrap;
   }
 
   .fb4-window {
