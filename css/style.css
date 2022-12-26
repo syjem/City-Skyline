@@ -142,6 +142,12 @@ body {
     height: 60%;
   }
 
+  .fb1a {
+    border-bottom: 7vh solid var(--building-color4);
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+  }
+
   .fb1b {
     width: 60%;
     height: 10%;
