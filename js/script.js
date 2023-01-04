@@ -5,6 +5,7 @@ const bb1 = document.querySelector('.bb1-window');
 const bb1d = document.querySelector('.bb1d');
 const bb2a = document.querySelector('.bb2a');
 const bb2b = document.querySelector('.bb2b ');
+const bb3 = document.querySelector('.bb3');
 let colors = false;
 
 
@@ -19,7 +20,7 @@ button.addEventListener('click', () => {
         bb1d.style.background = 'linear-gradient(var(--building-color1) 50%, var(--window-color1))';
         bb2a.style.borderBottom = '5vh solid var(--building-color2)';
         bb2b.style.background = 'repeating-linear-gradient(var(--building-color2),var(--building-color2) 6%,var(--window-color2) 6%,var(--window-color2) 9%)';
-        
+        bb3.style.background = 'repeating-linear-gradient(90deg,var(--building-color3),var(--building-color3),var(--window-color3) 15%';
     }
     else {
         sky.style.background = 'var(--sky-color-dark)';
@@ -27,6 +28,7 @@ button.addEventListener('click', () => {
         bb1d.style.background = 'linear-gradient(#000 50%, #777)';
         bb2a.style.borderBottom = '5vh solid #000';
         bb2b.style.background = 'repeating-linear-gradient(#000, #000 6%, #777 6%, #777 9%)';
+        bb3.style.background = 'repeating-linear-gradient(90deg, #000, #000, #777 15%';
 
     }
     colors = !colors;
