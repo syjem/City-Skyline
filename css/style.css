@@ -7,6 +7,19 @@
     --window-color2: #8cd9b3;
     --window-color3: #d98cb3;
     --window-color4: #8cb3d9;
+    --sky-color: radial-gradient(
+      circle closest-corner at 15% 15%,
+      #ffcf33 0% 20%,
+      #ffff66 21%,
+      #bbeeff 100%
+    );
+    --sky-color-dark: radial-gradient(
+      closest-corner circle at 15% 15%,
+      #ccc,
+      #ccc 20%,
+      #445 21%,
+      #223 100%
+      );
   }
 
 * {
@@ -41,13 +54,8 @@ body {
     justify-content: space-evenly;
   }
 
-  .sky {
-    background: radial-gradient(
-      circle closest-corner at 15% 15%,
-      #ffcf33 0% 20%,
-      #ffff66 21%,
-      #bbeeff 100%
-    );
+  #sky {
+    background: var(--sky-color);
   }
 
 /* BACKGROUND BUILDINGS - "bb" stands for "background building" */
@@ -293,6 +301,37 @@ body {
               );       
   }
 
+
+  /* Switch */
+
+  .switch {
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 5%;
+    height: 20px;
+    float: right;
+    border-radius: 14px;
+    margin: 10px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#myButton {
+    background-color: rgb(192, 199, 199);
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+#myButton:hover {
+    background-color: rgba(245, 242, 66, 0.959);
+}
+
+
+
+
+  /* Responsive */
   @media (max-width: 1000px) {
 
     :root {
@@ -306,13 +345,8 @@ body {
       --window-color4: #777;
     }
 
-    .sky {
-    background: radial-gradient(
-    closest-corner circle at 15% 15%,
-    #ccc,
-    #ccc 20%,
-    #445 21%,
-    #223 100%
-    )
-    };
+    #sky {
+    background: var(--sky-color-dark);
+    
+    }
   }
